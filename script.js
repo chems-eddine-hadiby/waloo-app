@@ -102,13 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Determine current page name
   const pathParts = currentPath.split('/');
-  const currentPage = pathParts[pathParts.length - 1] || 'index.html';
-  const pageName = currentPage === '' ? 'index.html' : currentPage;
+  const currentPage = pathParts[pathParts.length - 1] || '';
+  const pageName = currentPage === '' ? '' : currentPage;
 
   // Build language URLs for current page
-  const frUrl = isFr ? pageName : `${sitePrefix}${pageName}`;
-  const enUrl = isEn ? pageName : `${sitePrefix}en/${pageName}`;
-  const arUrl = isAr ? pageName : `${sitePrefix}ar/${pageName}`;
+  const frUrl = isFr ? (pageName || './') : `${sitePrefix}${pageName}`;
+  const enUrl = isEn ? (pageName || './') : `${sitePrefix}en/${pageName}`;
+  const arUrl = isAr ? (pageName || './') : `${sitePrefix}ar/${pageName}`;
 
   // Replace existing language links with flag-based switcher
   if (nav) {
