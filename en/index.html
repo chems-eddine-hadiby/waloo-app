@@ -12,13 +12,13 @@
   <meta property="og:title" content="Waloo — Save on local deals in Algeria" />
   <meta property="og:description"
     content="Discover nearby surplus deals from bakeries, cafés and grocers. Reserve instantly, pick up on your way home." />
-  <meta property="og:image" content="https://waloo-app.pages.dev/assets/og-image.svg" />
+  <meta property="og:image" content="https://waloo-app.pages.dev/assets/logo.png" />
   <meta property="og:url" content="https://waloo-app.pages.dev/en/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Waloo — Save on local deals in Algeria" />
   <meta name="twitter:description"
     content="Discover nearby surplus deals from bakeries, cafés and grocers. Reserve instantly, pick up on your way home." />
-  <meta name="twitter:image" content="https://waloo-app.pages.dev/assets/og-image.svg" />
+  <meta name="twitter:image" content="https://waloo-app.pages.dev/assets/logo.png" />
   <link rel="canonical" href="https://waloo-app.pages.dev/en/index.html" />
   <link rel="icon" type="image/png" href="../assets/logo.png" />
   <link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/index.html" />
@@ -56,6 +56,62 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Waloo free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, downloading and using Waloo is completely free. You only pay when you reserve an item using credits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I top up my balance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can top up via CIB or Edahabia bank card, or in cash at any nearby Waloo agent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cities is Waloo available in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Waloo works wherever registered stores are active. Offers appear based on your location across Algeria."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data safe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Your data is encrypted and we never sell it to third parties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I miss my pickup window?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The booking is auto-cancelled and credits are returned. Repeated no-shows may incur a small penalty."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I become a store or agent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sign up in the app, select the Store or Agent role, then complete KYC verification with your Trade Register and ID."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -66,7 +122,7 @@
       <img src="../assets/logo.png" alt="" class="brand-mark" />
       <div>
         <strong>Waloo</strong>
-        <span>Algeria marketplace</span>
+        <span>Nothing is lost, everything is transformed</span>
       </div>
     </a>
     <nav class="nav">
@@ -158,6 +214,40 @@
       </div>
     </section>
 
+    <!-- Trust badges -->
+    <section class="site-shell trust-strip reveal">
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <span class="trust-badge-icon">🔒</span>
+          <div>
+            <strong>Encrypted Data</strong>
+            <span>End-to-end encryption</span>
+          </div>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">💳</span>
+          <div>
+            <strong>Secure Payments</strong>
+            <span>Certified CIB & Edahabia</span>
+          </div>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">✅</span>
+          <div>
+            <strong>Verified Stores</strong>
+            <span>KYC required</span>
+          </div>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">🇩🇿</span>
+          <div>
+            <strong>100% Algerian</strong>
+            <span>Built locally</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Payment methods -->
     <section class="site-shell payment-strip reveal">
       <div class="section-heading">
@@ -165,17 +255,17 @@
         <h2>Top up your balance easily.</h2>
       </div>
       <div class="payment-methods">
-        <div class="payment-card">
+        <div class="payment-card reveal">
           <div class="payment-icon">💳</div>
           <strong>CIB</strong>
           <span>Interbank card</span>
         </div>
-        <div class="payment-card">
+        <div class="payment-card reveal">
           <div class="payment-icon">🏦</div>
           <strong>Edahabia</strong>
           <span>Algérie Poste</span>
         </div>
-        <div class="payment-card">
+        <div class="payment-card reveal">
           <div class="payment-icon">🧑‍💼</div>
           <strong>Waloo Agent</strong>
           <span>Pay with cash</span>

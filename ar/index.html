@@ -7,7 +7,7 @@
   <meta name="description" content="Waloo تطبيق جزائري يوصلك بعروض المتاجر القريبة. احجز بنقرة واستلم في طريقك." />
   <meta property="og:title" content="Waloo — عروض محلية في الجزائر" />
   <meta property="og:description" content="اكتشف عروض المخابز والمقاهي والبقالات القريبة. احجز واستلم بسهولة." />
-  <meta property="og:image" content="https://waloo-app.pages.dev/assets/og-image.svg" />
+  <meta property="og:image" content="https://waloo-app.pages.dev/assets/logo.png" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <title>Waloo — عروض محلية في الجزائر</title>
@@ -51,6 +51,62 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "هل التطبيق مجاني؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم، تحميل واستخدام Waloo مجاني. تدفع فقط عند حجز منتج بالرصيد."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف اشحن رصيدي؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "يمكنك الشحن عبر بطاقة CIB او Edahabia، او نقدا عند اي وكيل Waloo قريب منك."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "في اي ولايات يعمل Waloo؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Waloo متاح في جميع الولايات التي يوجد فيها متاجر مسجلة. العروض تظهر حسب موقعك."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل بياناتي محمية؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم. بياناتك مشفرة ولا نبيعها لاي طرف ثالث."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ماذا يحدث اذا لم استلم في الوقت؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "اذا لم تصل خلال وقت الاستلام، يلغى الحجز تلقائيا ويعاد الرصيد. التكرار قد يؤدي لغرامة بسيطة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف اصبح متجرا او وكيلا؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "سجل في التطبيق واختر دور متجر او وكيل، ثم اكمل التحقق KYC بتقديم السجل التجاري ووثيقة الهوية."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body dir="rtl">
@@ -59,7 +115,7 @@
   <header class="site-shell topbar">
     <a class="brand" href="./index.html" aria-label="الرئيسية">
       <img src="../assets/logo.png" alt="" class="brand-mark" />
-      <div><strong>Waloo</strong><span>سوق محلي جزائري</span></div>
+      <div><strong>Waloo</strong><span>لا شيء يُفقد، كل شيء يتحول</span></div>
     </a>
     <nav class="nav">
       <a class="nav-link active" href="./index.html">الرئيسية</a>
@@ -119,6 +175,40 @@
       </div>
     </section>
 
+    <!-- Trust badges -->
+    <section class="site-shell trust-strip reveal">
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <span class="trust-badge-icon">🔒</span>
+          <div>
+            <strong>بيانات مشفرة</strong>
+            <span>تشفير من طرف لطرف</span>
+          </div>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">💳</span>
+          <div>
+            <strong>دفع آمن</strong>
+            <span>CIB و Edahabia معتمدة</span>
+          </div>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">✅</span>
+          <div>
+            <strong>متاجر موثّقة</strong>
+            <span>تحقق KYC إلزامي</span>
+          </div>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">🇩🇿</span>
+          <div>
+            <strong>100% جزائري</strong>
+            <span>صنع محلياً</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Payment methods -->
     <section class="site-shell payment-strip reveal">
       <div class="section-heading">
@@ -126,17 +216,17 @@
         <h2>اشحن رصيدك بسهولة.</h2>
       </div>
       <div class="payment-methods">
-        <div class="payment-card">
+        <div class="payment-card reveal">
           <div class="payment-icon">💳</div>
           <strong>CIB</strong>
           <span>بطاقة بين البنوك</span>
         </div>
-        <div class="payment-card">
+        <div class="payment-card reveal">
           <div class="payment-icon">🏦</div>
           <strong>Edahabia</strong>
           <span>بريد الجزائر</span>
         </div>
-        <div class="payment-card">
+        <div class="payment-card reveal">
           <div class="payment-icon">🧑‍💼</div>
           <strong>وكيل Waloo</strong>
           <span>دفع نقدي</span>

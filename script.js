@@ -135,24 +135,65 @@ document.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector('.site-footer');
   if (!footer) {
     const footerEl = document.createElement('footer');
-    footerEl.className = 'site-shell footer site-footer';
+    footerEl.className = 'site-shell site-footer';
 
     const isRtl = document.documentElement.dir === 'rtl' || document.body.dir === 'rtl';
     const termsLabel = isRtl ? 'الشروط' : (isFr ? 'Conditions' : 'Terms');
     const privacyLabel = isRtl ? 'الخصوصية' : (isFr ? 'Confidentialité' : 'Privacy');
     const contactLabel = isRtl ? 'تواصل' : 'Contact';
+    const blogLabel = isRtl ? 'المدونة' : 'Blog';
+    const joinLabel = isRtl ? 'انضم' : (isFr ? 'Partenaires' : 'Join');
     const tagline = isRtl
-      ? 'عروض المتاجر المحلية في الجزائر'
-      : (isFr ? 'Offres locales en Algérie — moins de gaspillage, plus d\'économies.' : 'Local store deals for Algeria — reduce waste, save money.');
+      ? 'لا شيء يُفقد، كل شيء يتحول'
+      : (isFr ? 'Rien ne se perd, tout se transforme.' : 'Nothing is lost, everything is transformed.');
 
     footerEl.innerHTML = `
-      <div class="footer-brand"><strong>Waloo</strong><span>${tagline}</span></div>
-      <div class="footer-links">
-        <a href="${sitePrefix}terms.html">${termsLabel}</a>
-        <a href="${sitePrefix}privacy.html">${privacyLabel}</a>
-        <a href="${sitePrefix}contact.html">${contactLabel}</a>
+      <div class="footer-inner">
+        <div class="footer-brand"><strong>Waloo</strong><span>— ${tagline}</span></div>
+        <div class="footer-links">
+          <a href="${sitePrefix}blog.html">${blogLabel}</a>
+          <a href="${sitePrefix}join.html">${joinLabel}</a>
+          <a href="${sitePrefix}terms.html">${termsLabel}</a>
+          <a href="${sitePrefix}privacy.html">${privacyLabel}</a>
+          <a href="${sitePrefix}contact.html">${contactLabel}</a>
+        </div>
       </div>
     `;
     document.body.appendChild(footerEl);
+  }
+
+  // Back to top button
+  const btt = document.createElement('button');
+  btt.className = 'back-to-top';
+  btt.setAttribute('aria-label', 'Back to top');
+  btt.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>';
+  document.body.appendChild(btt);
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  window.addEventListener('scroll', () => {
+    btt.classList.toggle('is-visible', window.scrollY > 400);
+  }, { passive: true });
+
+  // Cookie consent banner
+  if (!localStorage.getItem('waloo_cookie_consent')) {
+    const isRtl2 = document.documentElement.dir === 'rtl' || document.body.dir === 'rtl';
+    const cookieText = isRtl2
+      ? 'نستخدم ملفات تعريف الارتباط لتحسين تجربتك.'
+      : (isFr ? 'Nous utilisons des cookies pour améliorer votre expérience.' : 'We use cookies to improve your experience.');
+    const acceptText = isRtl2 ? 'قبول' : (isFr ? 'Accepter' : 'Accept');
+    const declineText = isRtl2 ? 'رفض' : (isFr ? 'Refuser' : 'Decline');
+
+    const banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.innerHTML = `<p>${cookieText}</p><button class="cookie-accept">${acceptText}</button><button class="cookie-decline">${declineText}</button>`;
+    document.body.appendChild(banner);
+
+    banner.querySelector('.cookie-accept').addEventListener('click', () => {
+      localStorage.setItem('waloo_cookie_consent', 'accepted');
+      banner.remove();
+    });
+    banner.querySelector('.cookie-decline').addEventListener('click', () => {
+      localStorage.setItem('waloo_cookie_consent', 'declined');
+      banner.remove();
+    });
   }
 });

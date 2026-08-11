@@ -4,7 +4,7 @@
     <!-- Root = French (default) -->
     <url>
         <loc>https://waloo-app.pages.dev/index.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/index.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/index.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/index.html"/>
@@ -12,42 +12,42 @@
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/features.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/features.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/features.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/features.html"/>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/roles.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/roles.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/roles.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/roles.html"/>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/story.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/story.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/story.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/story.html"/>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/contact.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/contact.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/contact.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/contact.html"/>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/terms.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/terms.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/terms.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/terms.html"/>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/privacy.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/privacy.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/privacy.html"/>
@@ -56,66 +56,115 @@
     <!-- English -->
     <url>
         <loc>https://waloo-app.pages.dev/en/index.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/index.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/index.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/index.html"/>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/en/features.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/en/roles.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/en/story.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/en/contact.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/en/terms.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/en/privacy.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
 
     <!-- Arabic -->
     <url>
         <loc>https://waloo-app.pages.dev/ar/index.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/index.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/index.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/index.html"/>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/ar/features.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/ar/roles.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/ar/story.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/ar/contact.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/ar/terms.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
     </url>
     <url>
         <loc>https://waloo-app.pages.dev/ar/privacy.html</loc>
-        <lastmod>2026-07-22</lastmod>
+        <lastmod>2026-08-11</lastmod>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/privacy.html"/>
+    </url>
+
+    <!-- Blog -->
+    <url>
+        <loc>https://waloo-app.pages.dev/blog.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/blog.html"/>
+    </url>
+    <url>
+        <loc>https://waloo-app.pages.dev/en/blog.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/blog.html"/>
+    </url>
+    <url>
+        <loc>https://waloo-app.pages.dev/ar/blog.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/blog.html"/>
+    </url>
+
+    <!-- Join / Become a Partner -->
+    <url>
+        <loc>https://waloo-app.pages.dev/join.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/join.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/join.html"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/join.html"/>
+    </url>
+    <url>
+        <loc>https://waloo-app.pages.dev/en/join.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/join.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/join.html"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/join.html"/>
+    </url>
+    <url>
+        <loc>https://waloo-app.pages.dev/ar/join.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://waloo-app.pages.dev/join.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://waloo-app.pages.dev/en/join.html"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://waloo-app.pages.dev/ar/join.html"/>
     </url>
 </urlset>

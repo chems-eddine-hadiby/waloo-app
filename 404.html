@@ -1,35 +1,35 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="الصفحة المطلوبة غير موجودة." />
-    <title>404 — الصفحة غير موجودة | Waloo</title>
+    <meta name="description" content="Page non trouvée — Waloo" />
+    <title>404 — Page non trouvée | Waloo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Roboto+Slab:wght@400;500;700;800&display=swap"
         rel="stylesheet" />
-  <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./script.js"></script>
 </head>
 
-<body dir="rtl">
+<body>
     <div class="bg-orb orb-a"></div>
     <div class="bg-orb orb-b"></div>
     <header class="site-shell topbar">
-        <a class="brand" href="./index.html" aria-label="الصفحة الرئيسية">
+        <a class="brand" href="./index.html" aria-label="Accueil Waloo">
             <img src="./assets/logo.png" alt="" class="brand-mark" />
-            <div><strong>Waloo</strong><span>سوق محلي جزائري</span></div>
+            <div><strong>Waloo</strong><span>Rien ne se perd, tout se transforme</span></div>
         </a>
         <nav class="nav">
-            <a class="nav-link" href="./index.html">الرئيسية</a>
-            <a class="nav-link" href="./features.html">المميزات</a>
-            <a class="nav-link" href="./roles.html">الأدوار</a>
-            <a class="nav-link" href="./story.html">القصة</a>
-            <a class="nav-link" href="./contact.html">تواصل</a>
+            <a class="nav-link" href="./index.html">Accueil</a>
+            <a class="nav-link" href="./features.html">Fonctionnalités</a>
+            <a class="nav-link" href="./roles.html">Rôles</a>
+            <a class="nav-link" href="./story.html">Histoire</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
         </nav>
     </header>
     <main>
@@ -37,10 +37,26 @@
             style="text-align:center;min-height:60vh;display:flex;align-items:center;justify-content:center;">
             <div class="hero-copy reveal">
                 <h1 style="font-size:8rem;margin:0;line-height:1;color:var(--clr-emerald,#059669);">404</h1>
-                <h2 style="margin-top:1rem;">الصفحة غير موجودة</h2>
-                <p class="lede">عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها.</p>
+
+                <!-- Français -->
+                <h2 style="margin-top:1.5rem;">Page non trouvée</h2>
+                <p class="lede">Désolé, la page que vous cherchez n'existe pas ou a été déplacée.</p>
+                <div class="hero-actions" style="justify-content:center;margin-bottom:2rem;">
+                    <a class="btn btn-primary" href="./index.html">Retour à l'accueil (FR)</a>
+                </div>
+
+                <!-- English -->
+                <h2 style="margin-top:1.5rem;">Page not found</h2>
+                <p class="lede">Sorry, the page you're looking for doesn't exist or has been moved.</p>
+                <div class="hero-actions" style="justify-content:center;margin-bottom:2rem;">
+                    <a class="btn btn-primary" href="./en/index.html">Go to Home (EN)</a>
+                </div>
+
+                <!-- العربية -->
+                <h2 style="margin-top:1.5rem;" dir="rtl">الصفحة غير موجودة</h2>
+                <p class="lede" dir="rtl">عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها.</p>
                 <div class="hero-actions" style="justify-content:center;">
-                    <a class="btn btn-primary" href="./index.html">العودة للرئيسية</a>
+                    <a class="btn btn-primary" href="./ar/index.html">العودة للرئيسية (AR)</a>
                 </div>
             </div>
         </section>

@@ -1638,3 +1638,193 @@ button:focus-visible,
   vertical-align: middle;
   margin-inline-end: 0.5rem;
 }
+
+/* Trust badges */
+.trust-strip {
+  padding: 3rem 0;
+}
+
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: var(--surface-strong);
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--line);
+}
+
+.trust-badge-icon {
+  font-size: 1.75rem;
+}
+
+.trust-badge strong {
+  font-size: 0.95rem;
+  color: var(--text);
+  display: block;
+}
+
+.trust-badge span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Payment card stagger animation */
+.payment-card:nth-child(1) { transition-delay: 0s; }
+.payment-card:nth-child(2) { transition-delay: 0.1s; }
+.payment-card:nth-child(3) { transition-delay: 0.2s; }
+.payment-card:nth-child(4) { transition-delay: 0.3s; }
+
+.payment-card.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+}
+
+.payment-card.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--emerald);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+  z-index: 900;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
+}
+
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 2rem;
+}
+
+/* Cookie banner */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--surface-strong);
+  border-top: 1px solid var(--line);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  z-index: 9999;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
+  flex-wrap: wrap;
+}
+
+.cookie-banner p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.cookie-banner button {
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: transform 0.2s var(--ease);
+}
+
+.cookie-banner button:hover {
+  transform: scale(1.03);
+}
+
+.cookie-accept {
+  background: var(--emerald);
+  color: #fff;
+}
+
+.cookie-decline {
+  background: var(--slate);
+  color: var(--text);
+}
+
+/* Static footer */
+.site-footer {
+  padding: 2.5rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-brand strong {
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.footer-brand span {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--emerald);
+}
