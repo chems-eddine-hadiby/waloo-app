@@ -1,0 +1,23 @@
+{
+    "name": "Waloo — Local Deals in Algeria",
+    "short_name": "Waloo",
+    "description": "Discover surplus deals from local stores. Reserve and pick up easily.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#059669",
+    "icons": [
+        {
+            "src": "./assets/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "lang": "fr",
+    "categories": [
+        "lifestyle",
+        "food",
+        "shopping"
+    ]
+}

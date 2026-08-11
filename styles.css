@@ -121,8 +121,8 @@ button:focus-visible,
 }
 
 .brand-mark {
-  width: 44px;
-  height: 44px;
+  width: 88px;
+  height: 88px;
   border-radius: 14px;
   object-fit: contain;
 }
@@ -1540,4 +1540,101 @@ button:focus-visible,
 /* Remove old lang-pill styles since we use flags now */
 .lang-pill {
   display: none !important;
+}
+
+/* Payment methods strip */
+.payment-strip {
+  padding: 4rem 0;
+}
+
+.payment-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.payment-card {
+  position: relative;
+  background: var(--surface-strong);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1.5px solid var(--line);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
+  overflow: hidden;
+}
+
+.payment-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.04) 0%, rgba(5, 150, 105, 0) 60%);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.payment-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(5, 150, 105, 0.12);
+  border-color: var(--emerald);
+}
+
+.payment-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
+}
+
+.payment-card strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.payment-card span {
+  font-size: 0.875rem;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
+/* Social media section */
+.social-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+  color: var(--muted);
+  transition: transform 0.2s var(--ease), color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.08);
+  color: var(--emerald);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Hero button with icon */
+.btn svg {
+  vertical-align: middle;
+  margin-inline-end: 0.5rem;
 }

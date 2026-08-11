@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Register service worker for PWA support
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  }
+
   // Reveal-on-scroll
   const revealItems = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
@@ -119,15 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const langSwitcher = document.createElement('div');
     langSwitcher.className = 'lang-switcher';
     langSwitcher.innerHTML = `
-      <a href="${frUrl}" class="lang-flag ${isFr ? 'is-active' : ''}" title="Français" aria-label="Français">
-        <svg viewBox="0 0 36 24" width="28" height="19"><rect width="12" height="24" fill="#002395"/><rect x="12" width="12" height="24" fill="#fff"/><rect x="24" width="12" height="24" fill="#ED2939"/></svg>
-      </a>
-      <a href="${enUrl}" class="lang-flag ${isEn ? 'is-active' : ''}" title="English" aria-label="English">
-        <svg viewBox="0 0 60 30" width="28" height="14"><clipPath id="s"><path d="M0,0v30h60V0z"/></clipPath><g clip-path="url(#s)"><path d="M0,0v30h60V0z" fill="#012169"/><path d="M0,0l60,30m0-30L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0l60,30m0-30L0,30" clip-path="url(#s)" stroke="#C8102E" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/></g></svg>
-      </a>
-      <a href="${arUrl}" class="lang-flag ${isAr ? 'is-active' : ''}" title="العربية" aria-label="العربية">
-        <svg viewBox="0 0 900 600" width="28" height="19"><rect width="450" height="600" fill="#006233"/><rect x="450" width="450" height="600" fill="#FFF"/><circle cx="450" cy="300" r="150" fill="#D21034"/><circle cx="475" cy="300" r="120" fill="#006233"/><circle cx="475" cy="300" r="120" fill="#FFF"/><circle cx="490" cy="300" r="120" fill="#006233"/><path d="M450,300 L450,300" fill="none"/><circle cx="450" cy="300" r="150" fill="none"/><path d="M453,185 A130,130 0 1,0 453,415 A105,105 0 1,1 453,185" fill="#D21034"/><polygon points="453,225 467,270 515,270 476,298 490,343 453,315 416,343 430,298 391,270 439,270" fill="#D21034"/></svg>
-      </a>
+      <a href="${frUrl}" class="lang-flag ${isFr ? 'is-active' : ''}" title="Français" aria-label="Français">🇫🇷</a>
+      <a href="${enUrl}" class="lang-flag ${isEn ? 'is-active' : ''}" title="English" aria-label="English">🇬🇧</a>
+      <a href="${arUrl}" class="lang-flag ${isAr ? 'is-active' : ''}" title="العربية" aria-label="العربية">🇩🇿</a>
     `;
     nav.appendChild(langSwitcher);
   }
